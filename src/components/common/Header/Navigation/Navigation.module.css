@@ -1,8 +1,45 @@
 .navLogoWrapper {
+  margin-left: 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+/* .logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+} */
+
+.btnsWrapper {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 12px;
+}
+
+.searchBtn {
+  max-height: 24px;
+}
+
+.title {
+  padding-top: 8px;
+  margin-left: 5px;
+
+  /* margin-left: 10px; */
+  font-size: 15px;
+}
+
+@media screen and (min-width: 360px) {
+  .navLogoWrapper {
+    margin-left: calc(28px + 18px);
+  }
+
+  .title {
+    margin-left: 10px;
+  }
+}
+/* ------ */
 .navWrapper {
   display: flex;
   gap: 24px;

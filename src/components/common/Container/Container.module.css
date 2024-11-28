@@ -1,8 +1,22 @@
 .container {
   width: 100%;
-  max-width: 320px;
+  /* max-width: 320px; */
   padding: 0 15px;
+  /* padding: 0 16px; */
   margin: 0px auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 38px;
+  background-color: var(--primary-burgundy-purple);
+}
+
+.container.footer-container {
+  max-width: unset;
 }
 
 @media screen and (min-width: 768px) {

@@ -11,15 +11,15 @@ import App from './App.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <PersistGate loading={null} persistor={persistor}>
-      <HelmetProvider>
-        <Provider store={store}>
-          <BrowserRouter basename="/react-vite">
-            <App />
-          </BrowserRouter>
-        </Provider>
-      </HelmetProvider>
-    </PersistGate>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <PersistGate loading={null} persistor={persistor}>
+    <HelmetProvider>
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>
+    </HelmetProvider>
+  </PersistGate>
+  // </React.StrictMode>
 );

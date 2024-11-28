@@ -1,10 +1,75 @@
 :root {
   --toastify-color-success: #5cb85c;
   --toastify-icon-color-success: var(--toastify-color-success);
-
   --toastify-color-error: #ef5050;
   --toastify-icon-color-error: var(--toastify-color-error);
 
- --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --primary-white: #fff;
+  --primary-light-grey: #8e8e8e;
+  --primary-grey: #878787;
+  --primary-lavender-gray: #a39fac;
+  --primary-light-lavender: #d1adf8;
+  --primary-bright-lavender: #a260e3;
+  --primary-lavender: #59357d;
+  --primary-deep-lavender: #513879;
+  --primary-dark-lavender: #452578;
+  --primary-smoky-lavender: #392854;
+  --primary-burgundy-purple: #32224d;
+  --primary-dark-indigo: #09112d;
+
+  --secondary-gradient-lavender: linear-gradient(
+    180deg,
+    #a260e3 0%,
+    #59357d 100%
+  );
+  --secondary-semi-transparent-white: rgba(255, 255, 255, 0.5);
+  --secondary-transparent-white: rgba(255, 255, 255, 0.6);
+  --secondary-warm-grey: #9a8d8d;
+  --secondary-dusty-lavender: #7c758b;
+  --secondary-light-lavender: #675387;
+  --secondary-pastel-purple: #b58eeb;
+  --secondary-smoky-violet: #574770;
+  --secondary-dark-lavender: #402768;
+  --secondary-shadow-purple: #24193e;
+  --secondary-deep-space-purple: #271a47;
+  --secondary-deep-purple: #291d3e;
+
+  --border-white: 1px solid #fff;
+  --border-light-grey: 1px solid #aaa9a9;
+  --border-grey: 1px solid #838383;
+  --border-dark-grey: #6a6a6a;
+  --border-secondary-grey: 1px solid #8e8e8e;
+  --border-bright-lavender: 1px solid #c6aaff;
+  --border-light-lavender: 2px solid #675387;
+  --border-lavender: 1px solid #513879;
+  /* --border-radius: 10px; */
+
+  --backdrop-filter: blur(2px);
+  /* -webkit-backdrop-filter: var(--backdrop-filter); Для підтримки в Safari */
+  --background-transparent-shadow-purple: rgba(36, 25, 62, 0.6);
+  --background-transparent: rgba(25, 16, 47, 0.8);
+  --background: #19102f;
+  /* --background-gradient: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      #19102f 100%
+    ),
+    url(<path-to-image>) lightgray -25.128px -330.972px / 105.304% 392.751%
+      no-repeat; */
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --backdrop: rgba(17, 18, 19, 0.4);
 }
+
+/* background: rgba(25, 16, 47, 0.76);
+backdrop-filter: blur(7.5px); */
+
+/* background: rgba(25, 16, 47, 0.80);
+backdrop-filter: blur(5px); */
+
+/*
+background: url(<path-to-image>) lightgray 1.029px -228.258px / 100% 256.538% no-repeat;
+filter: blur(4px); */
+
+/* -----------блюр при відкритому нав барі------- */
+/* background: rgba(64, 56, 81, 0.20);
+backdrop-filter: blur(1.5px); */
