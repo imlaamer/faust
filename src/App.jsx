@@ -18,12 +18,12 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-        <Route index element={<HomePage />} />
+          <Route index element={<HomePage />} />
 
-        <Route path="/account" element={<Account />} />
-        <Route path="/activity" element={<AccountActivity />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/activity" element={<AccountActivity />} />
 
-        <Route path="*" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
 

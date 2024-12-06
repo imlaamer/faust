@@ -1,12 +1,21 @@
-import Container from '../../components/common/Container/Container';
+import LastUpdates from '../../components/LastUpdates/LastUpdates';
+import News from '../../components/News/News';
+import Popular from '../../components/Popular/Popular';
+import Teams from '../../components/Teams/Teams';
 
 import s from './HomePage.module.css';
 
 const HomePage = () => {
   return (
-    <section className={s.hero}>
-      <Container className="home-page-container"></Container>
-    </section>
+    <>
+      <Popular />
+
+      <News />
+
+      <Teams />
+
+      <LastUpdates />
+    </>
   );
 };
 

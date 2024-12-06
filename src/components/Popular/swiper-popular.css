@@ -1,0 +1,17 @@
+.slider-popular > .swiper-pagination {
+  bottom: 24px !important;
+  z-index: 2 !important;
+  font-weight: 250 !important;
+}
+
+/* .swiper-pagination-fraction */
+
+.slider-popular > .swiper-button-prev {
+  top: 190px !important;
+  z-index: 4 !important;
+}
+
+.slider-popular > .swiper-button-next {
+  top: 190px !important;
+  z-index: 4 !important;
+}

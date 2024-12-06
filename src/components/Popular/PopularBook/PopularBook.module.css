@@ -1,0 +1,60 @@
+.item {
+  display: flex;
+  /* flex-direction: row; */
+  gap: 20px;
+}
+
+.wrapper {
+  padding-bottom: 58px;
+}
+
+.bookTitle {
+  line-height: 1.1;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bookSubtitle {
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.iconsList {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.iconItem {
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.iconItem p {
+  font-weight: 300;
+}
+
+.icon {
+  margin-right: 2px;
+}
+
+.subtitle {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.text {
+  max-width: 168px;
+  /* width: 168px; */
+  height: 58px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Кількість рядків */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}

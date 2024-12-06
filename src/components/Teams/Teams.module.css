@@ -1,0 +1,21 @@
+.teams {
+  padding-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.item {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}

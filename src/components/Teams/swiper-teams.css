@@ -1,0 +1,31 @@
+.swiper-teams {
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide-active {
+}
+
+.swiper {
+}
+
+.swiper-slide {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* рефакторинг: загальні стилі для 2х слайдерів */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--primary-white);
+  font-size: 18px !important;
+}
+
+.swiper-button-prev {
+  left: -6px !important;
+}
+.swiper-button-next {
+  right: -6px !important;
+}

@@ -44,6 +44,7 @@
   --border-lavender: 1px solid #513879;
   /* --border-radius: 10px; */
 
+  --slider-grey: #969696;
   --backdrop-filter: blur(2px);
   /* -webkit-backdrop-filter: var(--backdrop-filter); Для підтримки в Safari */
   --background-transparent-shadow-purple: rgba(36, 25, 62, 0.6);

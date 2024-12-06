@@ -1,0 +1,36 @@
+.logo {
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.cat {
+}
+
+.navigation {
+  text-align: center;
+}
+
+.navigation li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.navigation li:last-child {
+  margin-bottom: 46px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.link {
+}
+
+.link:is(:hover, :focus) {
+  color: var(--secondary-pastel-purple);
+  /* transition: var(--transition); */
+}

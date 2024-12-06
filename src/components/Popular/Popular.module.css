@@ -1,0 +1,48 @@
+.popular {
+  padding-top: 58px;
+  /* padding-bottom: 58px; */
+
+  /* margin-top: 54px; */
+  width: 100vw;
+
+  /* background-position: -50px -50px; */
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(25, 16, 47, 1)),
+    image-set(
+      url(../../assets/static/images/placeholder/book-placeholder-1x-min.jpg) 1x,
+      url(../../assets/static/images/placeholder/book-placeholder-2x-min.jpg) 2x
+    );
+}
+
+@media screen and (min-width: 768px) {
+  .popular {
+    /* background-position: center; */
+  }
+}
+
+.wrapper {
+  /* padding-top: 58px;
+  padding-bottom: 60px; */
+  /* padding-top: 54px; */
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
