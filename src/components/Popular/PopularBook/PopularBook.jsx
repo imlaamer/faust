@@ -10,13 +10,19 @@ import s from './PopularBook.module.css';
 const PopularBook = () => {
   return (
     <li className={s.item}>
-      <Book />
+      <Book className="popularBook" />
 
       <div className={s.wrapper}>
         <h3 className={s.bookTitle}>Ще тільки світанок</h3>
         <h4 className={s.bookSubtitle}>그저 여명일 뿐 / Just twilight</h4>
 
         <ul className={s.iconsList}>
+          {/* {[1, 2, 3].map((item, index) => (
+            <li className={s.iconItem}>
+              <img src={star} alt="Star icon" className={s.icon} width="22" />
+              <p>35</p>
+            </li>
+          ))} */}
           <li className={s.iconItem}>
             <img src={star} alt="Star icon" className={s.icon} width="22" />
             <p>35</p>

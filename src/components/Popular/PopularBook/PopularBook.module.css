@@ -5,14 +5,9 @@
 }
 
 .wrapper {
+  /* max-width: 536px; */
   padding-bottom: 58px;
-}
-
-.bookTitle {
-  line-height: 1.1;
-  margin-bottom: 6px;
-  font-size: 18px;
-  font-weight: 600;
+  flex: 1;
 }
 
 .bookSubtitle {
@@ -34,6 +29,8 @@
 }
 
 .iconItem p {
+  font-size: 14px;
+
   font-weight: 300;
 }
 
@@ -47,14 +44,100 @@
 }
 
 .text {
-  max-width: 168px;
-  /* width: 168px; */
+  /* max-width: 168px; */
   height: 58px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Кількість рядків */
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  /* line-height: 1.4; */
+}
+
+.bookTitle {
+  line-height: 1.1;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+
+  /* max-width: 168px; */
+  max-width: 98%;
+
+  height: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   text-overflow: ellipsis;
-  line-height: 1.4;
+}
+
+@media screen and (max-width: 359px) {
+  .item {
+    gap: 15px;
+  }
+
+  .bookTitle {
+    font-size: 16px;
+  }
+
+  .text {
+    /* font-size: 12px; */
+    /* font-size: 12px;
+    height: 32px;
+    -webkit-line-clamp: 2;  */
+  }
+
+  .iconsList {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .text {
+    max-width: 168px;
+  }
+}
+
+@media screen and (max-width: 904px) {
+}
+
+@media screen and (min-width: 905px) {
+  .wrapper {
+    padding-bottom: 0;
+    /* max-width: 98%; */
+  }
+
+  .item {
+    gap: 34px;
+  }
+
+  .bookTitle {
+    font-size: 32px;
+    /* line-height: 1; */
+    height: 38px;
+    max-width: 100%;
+  }
+
+  .iconsList {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 28px;
+  }
+  .iconItem p {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    margin-bottom: 10px;
+  }
+
+  .text {
+    height: 80px;
+    max-width: 90%;
+    /* height: 96px; */
+  }
 }

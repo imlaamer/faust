@@ -1,3 +1,7 @@
+.item {
+  /* flex: 1 1 calc(50% - 50px); */
+}
+
 .chapterText {
   margin-bottom: 6px;
 }
@@ -16,4 +20,28 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 905px) {
+  /* .updatedBook {
+    width: 200px;
+    height: 288px;
+  } */
+
+  .chapterText,
+  .teamTitle {
+    font-size: 20px;
+  }
+
+  .teamTitle {
+    max-width: 152px;
+    /* letter-spacing: ; */
+  }
+  /* .item {
+    flex: 1 1 calc(33% - 50px);
+  } */
+
+  .teamIcon {
+    width: 32px;
+  }
 }

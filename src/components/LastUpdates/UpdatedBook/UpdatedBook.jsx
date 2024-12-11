@@ -8,12 +8,12 @@ const UpdatedBook = ({ book }) => {
   const { chapter, title, team } = book;
 
   return (
-    <li>
-      <Book isTitle={true} title={title} />
-
+    <li className={s.item}>
+      <Book isTitle={true} title={title} className='updatedBook' />
+    
       <p className={s.chapterText}>Розділ {chapter}</p>
       <div className={s.wrapper}>
-        <img src={teamIcon} alt="Team icon" />
+        <img src={teamIcon} alt="Team icon" className={s.teamIcon} />
         <p className={s.teamTitle}>{team}</p>
       </div>
     </li>

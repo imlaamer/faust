@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import './styles.css';
-import './swiper-popular.css'
+import './swiper-popular.css';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
@@ -34,20 +34,23 @@ const Popular = () => {
           {/* books?.map((book, index) => (
       <PopularBookItem key={index} book={book} />
       ) */}
-          <Swiper
-            pagination={{
-              type: 'fraction',
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="slider-popular"
-          >
-            {[1, 2, 3, 4, 5].map((book, index) => (
-              <SwiperSlide key={index}>
-                <PopularBook />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+
+          <div className={s.content}>
+            <Swiper
+              pagination={{
+                type: 'fraction',
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+              className="slider-popular"
+            >
+              {[1, 2, 3, 4, 5].map((book, index) => (
+                <SwiperSlide key={index}>
+                  <PopularBook />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
           {/* </ul> */}
         </div>
       </Container>

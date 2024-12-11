@@ -27,14 +27,9 @@ import cat from '../../assets/static/images/cat-in-hat-2x-min.png';
 import godHelp from '../../assets/static/images/god-help-2x-min.png';
 
 import s from './Teams.module.css';
+import { useEffect, useState } from 'react';
 
 const teams = [
-  {
-    id: nanoid(),
-    url: tea,
-    description: 'Team Filizhanka chayu',
-    name: 'Філіжанка чаю',
-  },
   {
     id: nanoid(),
     url: tomanUkraine,
@@ -43,9 +38,22 @@ const teams = [
   },
   {
     id: nanoid(),
+    url: tea,
+    description: 'Team Filizhanka chayu',
+    name: 'Філіжанка чаю',
+  },
+  {
+    id: nanoid(),
     url: cat,
     description: 'Team Kit u shlyapi',
     name: 'Кіт у шляпі',
+  },
+
+  {
+    id: nanoid(),
+    url: godHelp,
+    description: 'Team Bozhe pomozhy',
+    name: 'Боже поможи',
   },
   {
     id: nanoid(),
@@ -56,6 +64,25 @@ const teams = [
 ];
 
 const Teams = () => {
+  const [isScreen905, setIsScreen905] = useState(window.innerWidth >= 905);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsScreen905(window.innerWidth >= 905);
+    };
+
+    // Додаємо слухача подій зміни розміру вікна
+    window.addEventListener('resize', handleResize);
+
+    // Перевіряємо розмір під час першого рендера
+    handleResize();
+
+    // Видаляємо слухача подій під час демонтажу компонента
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className={s.teams}>
       <Container>
@@ -66,7 +93,7 @@ const Teams = () => {
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           //   spaceBetween={26}
-          slidesPerView={3}
+          slidesPerView={!isScreen905 ? 3 : 4}
           //   desktop {4} ?
           navigation
           className="swiper-teams"
