@@ -10,7 +10,7 @@ const ToggleButton = ({
 }) => {
   const handleClick = () => {
     setOpen((prev) => !prev);
-    handleCloseModal();
+    // handleCloseModal();
   };
 
   return (

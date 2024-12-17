@@ -1,25 +1,17 @@
-import { Link } from 'react-router-dom';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-// import './styles.css';
-import './swiper-popular.css';
-
-// import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-
-import book from '../../assets/static/images/placeholder/book-placeholder-2x-min.jpg';
-
-// import book from '../../assets/static/images/placeholder/book-placeholder-1x-min.jpg';
 
 import Container from '../common/Container/Container';
 import PopularBook from './PopularBook/PopularBook';
 
+import book from '../../assets/static/images/placeholder/book-placeholder-2x-min.jpg';
+// import book from '../../assets/static/images/placeholder/book-placeholder-1x-min.jpg';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './swiper-popular.css';
 import s from './Popular.module.css';
 
 const Popular = () => {
@@ -29,11 +21,6 @@ const Popular = () => {
         <div className={s.wrapper}>
           <h1 className={s.visuallyHidden}></h1>
           <h2 className={s.title}>Популярне</h2>
-
-          {/* <ul className={s.list}> */}
-          {/* books?.map((book, index) => (
-      <PopularBookItem key={index} book={book} />
-      ) */}
 
           <div className={s.content}>
             <Swiper
@@ -51,7 +38,6 @@ const Popular = () => {
               ))}
             </Swiper>
           </div>
-          {/* </ul> */}
         </div>
       </Container>
     </section>

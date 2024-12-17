@@ -1,7 +1,12 @@
 .logo {
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.icon {
+  height: 31px;
 }
 
 .title {

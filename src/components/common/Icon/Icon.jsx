@@ -7,10 +7,8 @@ const Icon = ({
   className = 'icon',
   width = '24',
   height = '24',
-  // fill = '#fff',
-
-  fill = 'none',
-  stroke = '#fff',
+  fill = '#fff',
+  stroke = 'none',
 }) => {
   return (
     <svg

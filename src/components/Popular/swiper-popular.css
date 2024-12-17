@@ -1,16 +1,7 @@
 .slider-popular > .swiper-pagination {
-  /* bottom: 24px !important; */
   bottom: 10% !important;
   z-index: 2 !important;
   font-weight: 250 !important;
-}
-
-/* .swiper-pagination-fraction */
-
-.slider-popular > .swiper-button-prev {
-}
-
-.slider-popular > .swiper-button-next {
 }
 
 .slider-popular > .swiper-button-prev,
@@ -26,11 +17,7 @@
 
   .slider-popular > .swiper-button-prev,
   .slider-popular > .swiper-button-next {
-    /* top: 190px !important; */
     top: 90% !important;
-  }
-
-  .slider-popular > .swiper-button-next {
   }
 }
 

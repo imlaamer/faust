@@ -1,11 +1,11 @@
 import Book from '../../Book/Book';
-import Icon from '../../common/Icon/Icon';
 
 import star from '../../../assets/static/icons/star.svg';
 import bookmark from '../../../assets/static/icons/bookmark.svg';
 import chat from '../../../assets/static/icons/chat.svg';
 
 import s from './PopularBook.module.css';
+import { Link } from 'react-router-dom';
 
 const PopularBook = () => {
   return (
@@ -13,8 +13,10 @@ const PopularBook = () => {
       <Book className="popularBook" />
 
       <div className={s.wrapper}>
-        <h3 className={s.bookTitle}>Ще тільки світанок</h3>
-        <h4 className={s.bookSubtitle}>그저 여명일 뿐 / Just twilight</h4>
+        <Link to="#">
+          <h3 className={s.bookTitle}>Ще тільки світанок</h3>
+          <h4 className={s.bookSubtitle}>그저 여명일 뿐 / Just twilight</h4>
+        </Link>
 
         <ul className={s.iconsList}>
           {/* {[1, 2, 3].map((item, index) => (

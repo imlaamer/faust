@@ -15,6 +15,7 @@ import { motion } from 'framer-motion';
 
 import s from './BurgerMenu.module.css';
 import ToggleButton from './ToggleButton/ToggleButton';
+import NavMenu from './NavMenu/NavMenu';
 
 const variants = {
   open: {
@@ -81,6 +82,7 @@ const BurgerMenu = ({
       >
         <nav className={s.container}>
           <div>
+            <NavMenu />
             {/* <Button
             onClick={handleOpen}
             title={isLoggedIn ? 'Log out' : 'Log in'}

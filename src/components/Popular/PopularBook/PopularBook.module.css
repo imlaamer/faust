@@ -1,11 +1,9 @@
 .item {
   display: flex;
-  /* flex-direction: row; */
   gap: 20px;
 }
 
 .wrapper {
-  /* max-width: 536px; */
   padding-bottom: 58px;
   flex: 1;
 }
@@ -25,7 +23,6 @@
 .iconItem {
   display: flex;
   align-items: center;
-  /* text-align: center; */
 }
 
 .iconItem p {
@@ -44,14 +41,13 @@
 }
 
 .text {
-  /* max-width: 168px; */
-  height: 58px;
+  font-size: 14px;
+  height: 60px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  /* line-height: 1.4; */
 }
 
 .bookTitle {
@@ -59,10 +55,7 @@
   margin-bottom: 6px;
   font-size: 18px;
   font-weight: 600;
-
-  /* max-width: 168px; */
   max-width: 98%;
-
   height: 18px;
   overflow: hidden;
   display: -webkit-box;
@@ -80,13 +73,6 @@
     font-size: 16px;
   }
 
-  .text {
-    /* font-size: 12px; */
-    /* font-size: 12px;
-    height: 32px;
-    -webkit-line-clamp: 2;  */
-  }
-
   .iconsList {
     margin-bottom: 6px;
   }
@@ -98,13 +84,9 @@
   }
 }
 
-@media screen and (max-width: 904px) {
-}
-
 @media screen and (min-width: 905px) {
   .wrapper {
     padding-bottom: 0;
-    /* max-width: 98%; */
   }
 
   .item {
@@ -113,7 +95,6 @@
 
   .bookTitle {
     font-size: 32px;
-    /* line-height: 1; */
     height: 38px;
     max-width: 100%;
   }
@@ -127,6 +108,7 @@
     width: 30px;
     height: 28px;
   }
+
   .iconItem p {
     font-size: 16px;
   }
@@ -136,8 +118,8 @@
   }
 
   .text {
+    font-size: 18px;
     height: 80px;
     max-width: 90%;
-    /* height: 96px; */
   }
 }
