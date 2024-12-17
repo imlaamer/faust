@@ -222,6 +222,16 @@
 </symbol>
 
 
+<symbol id="icon-burger" viewBox="0 0 20 20">
+<path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+</symbol>
+
+<symbol id="icon-menu" viewBox="0 0 20 20">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.25" d="M17.5 8.333h-15"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.25" d="M17.5 5h-15"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.25" d="M17.5 11.667h-15"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.25" d="M17.5 15h-15"></path>
+</symbol>
 
 
 </defs>
