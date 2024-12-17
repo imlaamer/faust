@@ -28,6 +28,8 @@
     url(../../assets/static/images/news-1x-min.jpg) 1x,
     url(../../assets/static/images/news-2x-min.jpg) 2x
   );
+  /* background-color: var(--primary-light-gray); */
+
   filter: blur(4px);
   z-index: 1;
 }

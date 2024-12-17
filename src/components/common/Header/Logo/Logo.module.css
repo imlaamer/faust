@@ -17,6 +17,10 @@
   font-size: 15px;
 }
 
+.navMenuLogo {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 360px) {
   .title {
     margin-left: 10px;

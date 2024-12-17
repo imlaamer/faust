@@ -4,9 +4,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: var(--secondary-pastel-purple);
-  background-color: #59357d;
-  /* background-color: var(--primary-lavender-gray); */
+  background-color: var(--primary-lavender);
   border-radius: 50%;
 }
 

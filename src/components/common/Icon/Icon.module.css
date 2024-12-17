@@ -5,3 +5,11 @@
   width: 24px;
   height: 24px;
 } */
+
+.sidebar-btn {
+  /* z-index: 20000; */
+}
+
+.burger-btn {
+  z-index: 3000;
+}

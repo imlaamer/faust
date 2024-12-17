@@ -16,6 +16,7 @@ const ToggleButton = ({
   return (
     <button
       onClick={handleClick}
+      onMouseEnter={handleClick}
       className={isHomePage ? s.button : s.coloredHeaderBtn}
     >
       <svg width="26" height="26" viewBox="0 0 23 23">

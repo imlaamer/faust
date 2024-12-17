@@ -65,91 +65,21 @@ const BurgerMenu = ({
     };
   }, []);
 
-  const handleOpen = (e) => {
-    setOpen(false);
-    setTimeout(() => {
-      // handleOpenModal(e);
-    }, 200);
-  };
+  // const handleOpen = (e) => {
+  //   setOpen(false);
+  //   setTimeout(() => {
+  //     // handleOpenModal(e);
+  //   }, 200);
+  // };
 
   return (
     <motion.div className={s.sidebar} animate={isOpen ? 'open' : 'closed'}>
       <motion.div
-        // className={isHomePage ? s.bg : s.notHomePageBg}
         className={s.bg}
         variants={variants}
         animate={{ opacity: isOpen ? 1 : 0 }}
       >
-        <nav className={s.container}>
-          <div>
-            <NavMenu />
-            {/* <Button
-            onClick={handleOpen}
-            title={isLoggedIn ? 'Log out' : 'Log in'}
-            className="navLogBtn"
-            id={isLoggedIn ? 'logout' : 'log'}
-            /> */}
-            {/* {isLogModalOpen && (
-              <Modal
-                onClose={handleCloseModal}
-                className="authModal"
-                isOpen={isLogModalOpen}
-              >
-                <LoginForm handleCloseModal={handleCloseModal} />
-              </Modal>
-            )} */}
-            {/* {isLogoutModalOpen && (
-              <Modal
-                onClose={handleCloseModal}
-                className="authModal"
-                isOpen={isLogoutModalOpen}
-              >
-                <LogoutCard handleCloseModal={handleCloseModal} />
-              </Modal>
-            )} */}
-          </div>
-
-          {/* <NavLink
-            className={({ isActive }) =>
-              `${s.navLink} ${isActive ? s.active : ''}`
-            }
-            to="/"
-            onClick={() => {
-              setOpen(false);
-            }}
-          >
-            <Icon id="home" stroke="#103931" fill="#103931" />
-            Home
-          </NavLink> */}
-
-          {/* <NavLink
-            className={({ isActive }) =>
-              `${s.navLink} ${isActive ? s.active : ''}`
-            }
-            to="/nannies"
-            onClick={() => {
-              setOpen(false);
-            }}
-          >
-            <Icon id="search" stroke="#103931" fill="#103931" />
-            Nannies
-          </NavLink> */}
-
-          {/* {isLoggedIn && (
-            <NavLink
-              className={({ isActive }) =>
-                `${s.navLink} ${isActive ? s.active : ''}`
-              }
-              to="/favorites"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              <Icon id="heart" stroke="#103931" fill="#103931" />
-              Favorites
-            </NavLink>
-          )} */}
-        </nav>
+        <NavMenu onMouseLeave={() => setOpen(false)} />
       </motion.div>
       <ToggleButton
         setOpen={setOpen}

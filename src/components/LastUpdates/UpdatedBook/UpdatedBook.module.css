@@ -1,4 +1,5 @@
 .item {
+  transition: transform 0.3s ease-in-out;
   /* flex: 1 1 calc(50% - 50px); */
 }
 
@@ -20,6 +21,10 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+}
+
+.item:hover {
+  transform: translateY(-6px) scale(1.03) translateZ(0px);
 }
 
 @media screen and (min-width: 905px) {

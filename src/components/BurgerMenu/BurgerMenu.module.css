@@ -1,5 +1,5 @@
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -8,14 +8,13 @@
 }
 
 .container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 50px;
   padding: 30px;
   gap: 25px;
-  min-height: 400px;
+  min-height: 400px; */
 }
 
 /* .notHomePageBg, */

@@ -1,0 +1,75 @@
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  padding-top: 4px;
+
+  height: 100%;
+  min-height: 400px;
+  /* min-height: 662px; */
+  /* max-height: 662px; */
+  /* max-width: 260px; */
+  max-width: 290px;
+
+  letter-spacing: 0.6px;
+  line-height: 1.3;
+
+  /* height: 400px; */
+  overflow-y: scroll;
+}
+
+.navContainer > *:not(:first-child):not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.navContainer > *:last-child {
+  /* align-self: flex-end; */
+  margin-top: auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: inherit;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.projectsBtn,
+.faustInfoBtn {
+  justify-content: space-between;
+}
+
+.faustInfoBtn {
+}
+
+.iconTitleBox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.active {
+  background-color: var(--secondary-deep-space-purple);
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 44px;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.linksList > a {
+  padding: 8px;
+  border-radius: 4px;
+}
